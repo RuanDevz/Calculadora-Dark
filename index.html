@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <style>
+    /* Define os estilos da calculadora */
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .display {
+      width: 280px;
+      height: 40px;
+      font-size: 20px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .button {
+      width: 70px;
+      height: 70px;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+    <h1></h1>
+  <!-- Inclui o código javascript da calculadora -->
+  <script src="calculadora.js"></script>
+
+  <!-- Adiciona um evento de clique aos botões da calculadora -->
+  <script>
+    // Obtém todos os botões da calculadora
+    var buttons = document.getElementsByClassName("button");
+
+    // Adiciona um evento de clique a cada botão
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", handleButtonClick);
+    }
+  </script>
+</body>
+</html>
